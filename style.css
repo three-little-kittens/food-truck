@@ -1,50 +1,78 @@
-nav{
+nav {
   background-color: #028D94;
 }
 
-.navbar-toggler{
-  color:white;
+.navbar-toggler {
+  color: white;
 }
 
-.navbar-toggler:hover{
+.navbar-toggler:hover {
   background-color: yellow;
 }
 
-#search-button{
+#search-button {
   background-color: aqua;
   border-color: black;
-  color:black;
+  color: black;
 }
 
-#search-button:hover{
+#search-button:hover {
   background-color: yellow;
-
 }
 
-.headings{
-  height:520px;
-  background-image : url("img/foodtrcuk.jpeg")
+.headings {
+  height: 520px;
+  background-image: url("img/foodtrcuk.jpeg")
 }
 
-.display-3{
-  color:blue;
+.display-3 {
+  color: blue;
 }
 
-.headings-p{
-  color:black;
+.headings-p {
+  color: black;
   padding-left: 50px;
   padding-right: 50px;
   color: red;
 }
 
-.display-3{
+.display-3 {
   font-size: 50px;
   padding-top: 100px;
   padding-left: 50px;
   padding-right: 50px;
 }
 
-#btn-learn{
+#btn-learn {
   margin-left: 50px;
+}
 
+.row {
+  text-align: center;
+}
+
+.container {
+  margin-left: 100px;
+}
+
+p {
+  line-height: 0.5em;
+  font-family: open sans;
+  color: #333;
+}
+
+.menutitle {
+  font-size: 200%;
+  line-height: 1.15em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800 !important;
+  font-style: normal;
+  color: #BC9B5D;
+}
+
+.menucaption {
+  font-family: 'Inconsolata', monospace;
+  font-style: italic;
+  line-height: 5em;
+  color: #333;
 }
