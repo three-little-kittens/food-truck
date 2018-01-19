@@ -1,0 +1,50 @@
+nav{
+  background-color: #028D94;
+}
+
+.navbar-toggler{
+  color:white;
+}
+
+.navbar-toggler:hover{
+  background-color: yellow;
+}
+
+#search-button{
+  background-color: aqua;
+  border-color: black;
+  color:black;
+}
+
+#search-button:hover{
+  background-color: yellow;
+
+}
+
+.headings{
+  height:520px;
+  background-image : url("foodtrcuk.jpeg")
+}
+
+.display-3{
+  color:blue;
+}
+
+.headings-p{
+  color:black;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: red;
+}
+
+.display-3{
+  font-size: 50px;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#btn-learn{
+  margin-left: 50px;
+
+}
