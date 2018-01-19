@@ -1,50 +1,170 @@
-nav{
-  background-color: #028D94;
-}
-
-.navbar-toggler{
-  color:white;
-}
-
-.navbar-toggler:hover{
-  background-color: yellow;
-}
-
-#search-button{
-  background-color: aqua;
-  border-color: black;
-  color:black;
-}
-
-#search-button:hover{
-  background-color: yellow;
+body{
 
 }
 
-.headings{
-  height:520px;
-  background-image : url("img/foodtrcuk.jpeg")
+nav {
+  background-color: black;
 }
 
-.display-3{
-  color:blue;
+.navbar-toggler {
+  display: inline-block;
+  background-color: white;
+  align-content: right;
 }
 
-.headings-p{
-  color:black;
+.navbar-toggler:hover {
+  background-color: #E0BE01;
+}
+
+#nav-link1, #nav-link2, #nav-link3, #nav-link4, #nav-link5 {
+  color: #E0BE01;
+}
+
+#nav-link1:hover {
+  background-color: #E0BE01;
+  color: black;
+  border-radius: 5px;
+}
+
+#nav-link2:hover {
+  background-color: #E0BE01;
+  color: black;
+  border-radius: 5px;
+}
+
+#nav-link3:hover {
+  background-color: #E0BE01;
+  color: black;
+  border-radius: 5px;
+}
+
+#nav-link4:hover {
+  background-color: #E0BE01;
+  color: black;
+  border-radius: 5px;
+}
+
+#nav-link5:hover {
+  background-color: #E0BE01;
+  color: black;
+  border-radius: 5px;
+}
+
+#search-button {
+  background-color: transparent;
+  border-color: #E0BE01;
+  color: #E0BE01;
+}
+
+#search-button:hover {
+  background-color: #E0BE01;
+  color: black;
+}
+
+.above-nav {
+  text-align: center;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d2b20c' fill-opacity='0.4'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+hr {
+    border: none;
+    height: 2px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+
+.est {
+  font-size: 10px;
+}
+
+.company-logo {
+  color: #E0BE01;
+}
+
+#headings {
+  height: 520px;
+  background-image: url("img/foodtruck.jpeg")
+}
+
+.display-3 {}
+
+.headings-p {
+  color: black;
   padding-left: 50px;
   padding-right: 50px;
   color: red;
 }
 
-.display-3{
+.display-3 {
   font-size: 50px;
   padding-top: 100px;
   padding-left: 50px;
   padding-right: 50px;
 }
 
-#btn-learn{
+#btn-learn {
   margin-left: 50px;
+}
 
+ul {
+  overflow: auto;
+}
+
+ul li {
+  list-style-type: none;
+  float: left;
+}
+
+ul li a i {
+  color: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 25px;
+  text-align: center;
+  margin-right: 5px;
+  padding-top: 6px;
+  padding-left: 2px;
+}
+
+.fa-facebook {
+  background: transparent;
+}
+
+.fa-instagram {
+  background: transparent;
+}
+
+.fa-twitter {
+  background: transparent;
+}
+
+.fa-youtube {
+  background: transparent;
+}
+
+.fa-facebook:hover {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-instagram:hover {
+  background: #007bb6;
+  color: white;
+}
+
+.fa-twitter:hover {
+  background: #00aced;
+  color: white;
+}
+
+.fa-youtube:hover {
+  background: #dd4b39;
+  color: white;
+}
+
+#copyright {
+  text-align: center;
 }
