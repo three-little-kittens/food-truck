@@ -109,7 +109,7 @@ hr {
 .display-3 {
   font-size: 50px;
   padding-top: 100px;
-  padding-left: 50px;
+
   padding-right: 50px;
 }
 
@@ -185,15 +185,7 @@ ul li a i {
  width: 340px;
 }
 
-.container {
-  margin-left: 100px;
-}
 
-p {
-  line-height: 0.5em;
-  font-family: open sans;
-  color: #333;
-}
 
 .menutitle {
   font-size: 200%;
