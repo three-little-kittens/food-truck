@@ -184,3 +184,29 @@ ul li a i {
  height: 300px;
  width: 340px;
 }
+
+.container {
+  margin-left: 100px;
+}
+
+p {
+  line-height: 0.5em;
+  font-family: open sans;
+  color: #333;
+}
+
+.menutitle {
+  font-size: 200%;
+  line-height: 1.15em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800 !important;
+  font-style: normal;
+  color: #BC9B5D;
+}
+
+.menucaption {
+  font-family: 'Inconsolata', monospace;
+  font-style: italic;
+  line-height: 5em;
+  color: #333;
+}
