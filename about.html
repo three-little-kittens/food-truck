@@ -7,7 +7,6 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="icon" href="../../../../favicon.ico">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
 
@@ -25,6 +24,7 @@
 
 <body>
 
+
   <div class="above-nav">
     <h2 class="company-logo">Little Kittens</h2>
     <p class="est">JAKARTA, INDONESIA - EST.2018</p>
@@ -32,14 +32,14 @@
 
   <nav class="navbar navbar-expand-lg navbar-light">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item">
-          <a class="nav-link" id="nav-link1" href="#">Home</a>
+          <a class="nav-link" id="nav-link1" href="index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="nav-link2" href="about.html">About</a>
@@ -62,7 +62,6 @@
   </nav>
 
 
-
   <main role="main">
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -70,103 +69,61 @@
       <div class="container">
       </div>
     </div>
-    </div>
     <br>
 
 
     <div class="container">
-      <h2 class="signature" align="center">Our Signature Menu</h2><br>
+      <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-4" align="center">
-          <img src="./img/burger.jpeg" style="height:300px; width:350px;" alt="burger"><br>
-          <p></p>
-          <p>Special burger with great taste !</p>
+        <div class="col-md-6">
+          <h4 style="padding-top: 50px;margin-bottom: 0px;">About our food truck</h4>
+          <h2>Little Kittens</h2>
+          <p style="text-align: justify;">At the beginning of 2018, Little Kittens was born with our mobile cuisine, since then, Chef Dzaky, Angel and Fahri has been crafting high quality, Craft Burgers, Chicken Wings and the most recently, craft Milkshakes. Our food is handcrafted
+            and made per order, which allows us to provide the highest quality food for you and your family. </p>
+          <!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
         </div>
-        <div class="col-md-4" align="center">
-          <img src="./img/milshake.jpg" style="height:300px; width:350px;" alt="milkshake">
-          <p></p>
-          <p>Delicious milkshake with amazing sensation !</p>
+        <div class="col-md-4">
+          <img src="./img/chef.jpeg" class="float-right" alt="chef" style="padding-top: 50px">
         </div>
-        <div class="col-md-4" align="center">
-          <img src="./img/pizza.jpeg" style="height:300px; width:350px;" alt="pizza">
-          <p></p>
-          <p>Our gratest pizza with lovable meat !</p>
-        </div>
-        <hr>
-      </div>
-      <div class="container">
-        <hr>
-        <div class="row">
-          <div class="col-md-3">
-          </div>
-          <div class="col-md-3">
-            <img src="./img/chelsea-islan.jpg" style="height:150px; width:200px;" alt="Chelsea Islan">
-          </div>
-          <div class="col-md-3">
-            <p>Makanannya enak banget loh, nyesel ga nyoba !</p>
-            <p>- Chelsea Islan, 22 tahun -</p>
-          </div>
-          <div class="col-md-3">
-          </div>
-
+        <div class="col-md-6">
+          <h2 style="padding-top:  50px;">Where to find us</h2>
+          <p style="text-align: justify;">We hover around the City of Jakarta, Bandung and proximities. You can find us lately at Jl. Kemang I No.7, RT.12/RW.1, Bangka, Mampang Prpt, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12730. </p>
+          <p><a class="btn btn-secondary" href="#" role="button">Find us here &raquo;</a></p>
         </div>
 
-      </div>
-
-      <div class="container">
-        <hr>
-        <div class="row">
-          <div class="col-md-3">
-          </div>
-          <div class="col-md-3">
-            <img src="./img/haidar-hanif.jpg" style="height:175px; width:200px;" alt="Haidar Hanif">
-          </div>
-          <div class="col-md-3">
-            <p>Sumpah, makanan food truck paling enak yang pernah gua coba, harganya juga bersahabat beut !</p>
-            <p>- Haidar Hanif, 24 tahun -</p>
-          </div>
-          <div class="col-md-3">
-          </div>
+        <div class="col-md-4">
+          <br>
+          <div id="map"></div>
+          <script>
+            function initMap() {
+              var uluru = {
+                lat: -6.2564046,
+                lng: 106.8147035
+              };
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 16,
+                center: uluru
+              });
+              var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+              });
+            }
+          </script>
+          <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAC6b2po4h9zZcOJ9_3ojNCR7u-ZKwedI&callback=initMap">
+          </script>
 
         </div>
-        <hr>
 
       </div>
-
-      <div class="container">
-
-        <div class="row">
-          <div class="col-md-3">
-          </div>
-          <div class="col-md-3">
-            <img src="./img/ferry.jpeg" style="height:175px; width:200px;" alt="Haidar Hanif">
-          </div>
-          <div class="col-md-3">
-            <p>Selama merantau ke Jakarta, makanan dari food truck ini bikin gua ketagihan dan gamau balik ke Semarang</p>
-            <p>- Ferryal Fajar, 22 tahun -</p>
-          </div>
-          <div class="col-md-3">
-          </div>
-
-        </div>
-        <hr>
-      </div>
-
-
-
-      <br>
-      <div class="container">
-        <!-- Example row of columns -->
-
-      </div>
+      <!-- /container -->
+      <hr>
     </div>
-
-    </div>
-    <!-- /container -->
 
 
 
   </main>
+
 
   <footer class="container">
     <div class="row">
@@ -182,14 +139,14 @@
           <li><a href="http://youtube.com/" target="_blank"><i class="fa fa-youtube"></i> </a></li>
         </ul>
       </div>
+    </div>
   </footer>
-
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script>
-    window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-sl im.min.js"><\/script>')
+    window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')
   </script>
   <script src="../../../../assets/js/vendor/popper.min.js"></script>
   <script src="../../../../dist/js/bootstrap.min.js"></script>
