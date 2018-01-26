@@ -5,21 +5,21 @@ let partners = [{
     id: 0,
     firstname:"Haidar",
     lastname:"Dzaky",
-    username:"haidardzaky14",
+    email:"haidardz@gmail.com",
     origin:"Bandung"
   },
   {
     id: 1,
     firstname:"Angeline",
     lastname:"Go",
-    username:"angeline_go",
+    email:"angeline_go@hotmail.com",
     origin:"Jakarta"
   },
   {
     id: 2,
     firstname:"Fahri",
     lastname:"Hakim",
-    username:"fahriabdhakim",
+    email:"fahriabdhakim@gmail.com",
     origin:"Bandung"
   },
 
@@ -57,9 +57,8 @@ router.post("/", (req, res) => {
     id: partners.length,
     firstname:req.body.firstname,
     lastname:req.body.lastname,
-    username:req.body.username,
-    origin:req.body.citis,
-
+    email: req.body.email,
+    origin:req.body.origin
   }
   saveNewItem(partners, data)
   res.send(partners)
@@ -86,10 +85,10 @@ router.delete("/:id", (req, res) => {
 //Update partner
 router.put(`/:id`, (req, res) => {
   const itemId = Number(req.params.id)
-  const name = req.body.name
-  const team = req.body.team
-  const posistion = req.body.position
-  const status = req.body.status
+  const firstname = req.body.firstname
+  const lastname = req.body.lastname
+  const email = req.body.email
+  const origin = req.body.origin
 
   //find data index
   const itemIndex = partners.findIndex((item, index) => {
@@ -97,10 +96,10 @@ router.put(`/:id`, (req, res) => {
   })
 
   //Modify matched data
-  partners[itemIndex]["name"] = name
-  partners[itemIndex]["team"] = team
-  partners[itemIndex]["position"] = posistion
-  partners[itemIndex]["status"] = status
+  partners[itemIndex]["firstname"] = firstname
+  partners[itemIndex]["lastname"] = lastname
+  partners[itemIndex]["email"] = email
+  partners[itemIndex]["origin"] = origin
 
   // Prepare  response
   const response = {
