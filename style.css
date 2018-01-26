@@ -170,6 +170,10 @@ ul li a i {
   width: 340px;
 }
 
+.twitter-tweet {
+  display: inline;
+}
+
 .menutitle {
   font-size: 200%;
   line-height: 1.15em;
@@ -184,4 +188,19 @@ ul li a i {
   font-style: italic;
   line-height: 5em;
   color: #333;
+}
+
+.responsiveCal {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+
+.responsiveCal iframe {
+  position: absolute;
+  top: 30px;
+  left: 130px;
+  width: 80%;
+  height: 80%;
 }
