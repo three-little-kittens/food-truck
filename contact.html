@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-s
 
 <head>
   <meta charset="utf-8">
@@ -49,7 +48,7 @@ s
           <a class="nav-link" id="nav-link3" href="menu.html">Menu</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="nav-link4" href="calendar.html">Schedule & Events</a>
+          <a class="nav-link" id="nav-link4" href="#">Schedule & Events</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="nav-link5" href="contact.html">Contact Us</a>
@@ -74,51 +73,80 @@ s
 
 
     <div class="container">
-      <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-6">
-          <h4 style="padding-top: 50px;margin-bottom: 0px;">About our food truck</h4>
-          <h2>Little Kittens</h2>
-          <p style="text-align: justify;">At the beginning of 2018, Little Kittens was born with our mobile cuisine, since then, Chef Dzaky, Angel and Fahri has been crafting high quality, Craft Burgers, Chicken Wings and the most recently, craft Milkshakes. Our food is handcrafted
-            and made per order, which allows us to provide the highest quality food for you and your family. </p>
-          <!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
-        </div>
-        <div class="col-md-4">
-          <img src="./img/chef.jpeg" class="float-right" alt="chef" style="padding-top: 50px">
-        </div>
-        <div class="col-md-6">
-          <h2 style="padding-top:  50px;">Where to find us</h2>
-          <p style="text-align: justify;">We hover around the City of Jakarta, Bandung and proximities. You can find us lately at Jl. Kemang I No.7, RT.12/RW.1, Bangka, Mampang Prpt, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12730. </p>
-          <p><a class="btn btn-secondary" href="#" role="button">Find us here &raquo;</a></p>
-        </div>
+        <!-- address -->
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Little Kittens Food Truck</h2>
+            <p style="text-align: justify;">Jakarta, Bandung and surrounding areas</p>
+            <p style="text-align: justify;">For opening hours check our social media platforms and schedule & events</p>
+            <p style="text-align: justify;">Open Monday to Friday 9:30am to 1pm / 4:30pm to 7pm</p>
+            <p style="text-align: justify;">For catering call 903-272-4591</p>
+            <p style="text-align: justify;">For orders call 903-272-0956</p>
+            <!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
+          </div>
+          <div class="col-md-4">
+            <img src="./img/orangmakan.jpeg" class="float-right" alt="chef" style="padding-top: 50px;margin-left: 200px;">
+          </div>
 
-        <div class="col-md-4">
-          <br>
-          <div id="map"></div>
-          <script>
-            function initMap() {
-              var uluru = {
-                lat: -6.2564046,
-                lng: 106.8147035
-              };
-              var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 16,
-                center: uluru
-              });
-              var marker = new google.maps.Marker({
-                position: uluru,
-                map: map
-              });
-            }
-          </script>
-          <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAC6b2po4h9zZcOJ9_3ojNCR7u-ZKwedI&callback=initMap">
-          </script>
+
+
+
+
 
         </div>
 
       </div>
-      <!-- /container -->
-      <hr>
+      <br>
+      <!-- contact form -->
+      <div class="col-md-8" style="padding-left: 0px">
+        <div class="well-well-sm">
+          <form>
+            <div class="row">
+              <div class="col-md-6" style="padding-left: 0px;">
+                <div class="form-group">
+                  <label for="name">
+                                Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                </div>
+                <div class="form-group">
+                  <label for="email">
+                                Email Address</label>
+                  <div class="input-group">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                    </span>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                </div>
+                <div class="form-group">
+                  <label for="subject">
+                                Subject</label>
+                  <select id="subject" name="subject" class="form-control" required="required">
+                                <option value="na" selected="">Choose One:</option>
+                                <option value="service">General Customer Service</option>
+                                <option value="suggestions">Suggestions</option>
+                                <option value="product">Product Support</option>
+                            </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="name">
+                                Message</label>
+                  <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message"></textarea>
+                </div>
+              </div>
+              <div class="col-md-12" style="padding-left: 0px;">
+                <button type="submit" class="btn btn-outline-success my-2 my-sm-0" id="btnContactUs" style="border-color:  black; color: black;">
+                            Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- /container -->
+    <hr>
     </div>
 
 
