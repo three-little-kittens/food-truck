@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+s
 
 <head>
   <meta charset="utf-8">
@@ -7,8 +8,10 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="icon" href="../../../../favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
 
-  <title>Little Kitt(ch)ens</title>
+  <title>Little Kittens</title>
 
   <!-- Bootstrap core CSS -->
   <link href="./bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -22,25 +25,34 @@
 
 <body>
 
+
+  <div class="above-nav">
+    <h2 class="company-logo">Little Kittens</h2>
+    <p class="est">JAKARTA, INDONESIA - EST.2018</p>
+  </div>
+
   <nav class="navbar navbar-expand-lg navbar-light">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-    <a class="navbar-brand" href="#">Logo</a>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="./index.html">Home</a>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-link1" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./about.html">About<span class="sr-only">(current)</span></a>
+          <a class="nav-link" id="nav-link2" href="about.html">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Menu</a>
+          <a class="nav-link" id="nav-link3" href="menu.html">Menu</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
+          <a class="nav-link" id="nav-link4" href="#">Schedule & Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-link5" href="#">Contact Us</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
@@ -50,16 +62,16 @@
     </div>
   </nav>
 
+
   <main role="main">
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="headings">
+    <div class="col-md-12" id="headings">
       <div class="container">
-        <h2 class="display-3">Little Kittens</h2>
-        <p class="headings-p">This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a id="btn-learn" class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
       </div>
     </div>
+    <br>
+
 
     <div class="container">
       <!-- Example row of columns -->
@@ -67,7 +79,7 @@
         <div class="col-md-6">
           <h4 style="padding-top: 50px;margin-bottom: 0px;">About our food truck</h4>
           <h2>Little Kittens</h2>
-          <p style="text-align: justify;">At the beginning of 2018, Little Kitt(ch)ens was born with our mobile cuisine, since then, Chef Dzaky, Angel and Fahri has been crafting high quality, Craft Burgers, Chicken Wings and the most recently, craft Milkshakes. Our food is handcrafted
+          <p style="text-align: justify;">At the beginning of 2018, Little Kittens was born with our mobile cuisine, since then, Chef Dzaky, Angel and Fahri has been crafting high quality, Craft Burgers, Chicken Wings and the most recently, craft Milkshakes. Our food is handcrafted
             and made per order, which allows us to provide the highest quality food for you and your family. </p>
           <!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
         </div>
@@ -79,18 +91,57 @@
           <p style="text-align: justify;">We hover around the City of Jakarta, Bandung and proximities. You can find us lately at Jl. Kemang I No.7, RT.12/RW.1, Bangka, Mampang Prpt, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12730. </p>
           <p><a class="btn btn-secondary" href="#" role="button">Find us here &raquo;</a></p>
         </div>
+
         <div class="col-md-4">
-          <img src="./img/burger2.jpeg" class="float-right" alt="burger" style="padding-top: 50px">
+          <br>
+          <div id="map"></div>
+          <script>
+            function initMap() {
+              var uluru = {
+                lat: -6.2564046,
+                lng: 106.8147035
+              };
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 16,
+                center: uluru
+              });
+              var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+              });
+            }
+          </script>
+          <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAC6b2po4h9zZcOJ9_3ojNCR7u-ZKwedI&callback=initMap">
+          </script>
+
         </div>
+
       </div>
       <!-- /container -->
+      <hr>
+    </div>
+
+
 
   </main>
 
-  <footer class="container">
-    <p>&copy; Three Little Kitt(ch)ens 2018</p>
-  </footer>
 
+  <footer class="container">
+    <div class="row">
+      <div class="col-md-4" id="copyright">
+        <p>&copy; Three Little Kittens 2018</p>
+      </div>
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <ul>
+          <li><a href="http://facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="http://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="http://instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="http://youtube.com/" target="_blank"><i class="fa fa-youtube"></i> </a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
@@ -98,8 +149,8 @@
   <script>
     window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')
   </script>
-  <script src="../../../../assets/js/vendor/popper.min.js"></script>
-  <script src="../../../../dist/js/bootstrap.min.js"></script>
+  <script src="./bootstrap/assets/js/vendor/popper.min.js"></script>
+  <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
