@@ -168,6 +168,10 @@ ul li a i {
   width: 340px;
 }
 
+.twitter-tweet {
+  display: inline;
+}
+
 .menutitle {
   font-size: 200%;
   line-height: 1.15em;
