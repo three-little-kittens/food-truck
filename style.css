@@ -223,8 +223,8 @@ ul li a i {
 
 #btnContactUs {
   background-color: transparent;
-  border-color: black;
-  color: black;
+  border-color: #E0BE01;
+  color: #E0BE01;
 }
 
 #btnContactUs:hover {
